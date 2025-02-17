@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    @font-face {
+        font-family: 'Iransans';
+        src: url(/public/fonts/iransans/IRANSansWeb-Light.ttf) format('ttf');
+        src: url(/public/fonts/iransans/IRANSansWeb-Light.eot) format('eot');
+        src: url(/public/fonts/iransans/IRANSansWeb-Light.woff) format('woff');
+        src: url(/public/fonts/iransans/IRANSansWeb-Light.woff2) format('woff2');
+      }
+
+  }
+

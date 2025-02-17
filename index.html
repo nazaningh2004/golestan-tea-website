@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/tailwind/tailwind.css">
+  <title>Document</title>
+
+  <style>
+    .app-bg {
+      background-image: url("https://www.golestan.com/wp-content/uploads/2023/01/recipe-baner-1.png");
+      background-position: center center;
+    }
+  </style>
+</head>
+
+<body>
+  <div
+    class="desktop:max-w-[1600px] desktop:mx-auto desktop:h-[100.5px] mobile:h-[181.5px] bg-[#2b2b2b] sticky z-[999999999] top-0">
+    <!-- website header -->
+    <header
+      class="max-w-[1070px] desktop:h-[100.5px] mobile:h-[181.5px] bg-[#2b2b2b] mx-auto desktop:flex justify-center">
+      <div
+        class="headerItems desktop:w-[1400px] h-full flex mobile:flex-col desktop:flex-row mx-auto mobile:items-center desktop:items-start relative">
+        <div class="logoContainer w-[170px] h-[105px] desktop:translate-x-[-37px] mobile:mt-2 desktop:mt-0">
+          <img src="./public/images/logo.png" alt="logo" class="desktop:translate-y-[47%]" />
+        </div>
+        <div class="hamburgerMenu w-[32px] h-[32px] desktop:hidden group">
+          <svg
+            class="w-[32px] h-[32px] fill-[#AFB2B4] hover:fill-white cursor-pointer duration-200 absolute right-6 bottom-3"
+            xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+            <path
+              d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z">
+            </path>
+          </svg>
+          <div
+            class="hamburgerMenuDrawer w-[100%] h-fit bg-[#2b2b2b] py-2 absolute right-0 top-[90%] group-hover:flex hidden flex-col font-[14px]">
+            <div class="drawerItems w-full h-[44px] py-[12px] mr-4 text-[14px] px-[15px] cursor-pointer">
+              <p class="font-iransans font-[14px] text-[#AFB2B4] hover:text-white duration-200">
+                صفحه اصلی
+              </p>
+            </div>
+            <div class="drawerItems w-full h-[44px] py-[12px] mr-4 text-[14px] px-[15px] cursor-pointer">
+              <p class="font-iransans font-[14px] text-[#AFB2B4] hover:text-white duration-200">
+                شرکت گلستان
+              </p>
+            </div>
+            <div class="drawerItems w-full h-[44px] py-[12px] mr-4 text-[14px] px-[15px] cursor-pointer">
+              <p class="font-iransans font-[14px] text-[#AFB2B4] hover:text-white duration-200">
+                محصولات
+              </p>
+            </div>
+            <div class="drawerItems w-full h-[44px] py-[12px] mr-4 text-[14px] px-[15px] cursor-pointer">
+              <p class="font-iransans font-[14px] text-[#AFB2B4] hover:text-white duration-200">
+                وبلاگ
+              </p>
+            </div>
+            <div class="drawerItems w-full h-[44px] py-[12px] mr-4 text-[14px] px-[15px] cursor-pointer">
+              <p class="font-iransans font-[14px] text-[#AFB2B4] hover:text-white duration-200">
+                قرعه کشی
+              </p>
+            </div>
+            <div class="drawerItems w-full h-[44px] py-[12px] mr-4 text-[14px] px-[15px] cursor-pointer">
+              <p class="font-iransans font-[14px] text-[#AFB2B4] hover:text-white duration-200">
+                استخدام
+              </p>
+            </div>
+            <div class="drawerItems w-full h-[44px] py-[12px] mr-4 text-[14px] px-[15px] cursor-pointer">
+              <p class="font-iransans font-[14px] text-[#AFB2B4] hover:text-white duration-200">
+                تماس با ما
+              </p>
+            </div>
+            <div class="drawerItems w-full h-[44px] py-[12px] mr-4 text-[14px] px-[15px] cursor-pointer">
+              <p class="font-iransans font-[14px] text-[#AFB2B4] hover:text-white duration-200">
+                DarkMode
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="nav__container mobile:hidden desktop:flex w-[870px] h-full mx-auto flex justify-center translate-x-[-40px] items-center">
+          <nav class="w-[870px] h-[46px] flex items-center justify-center mt-4 gap-5">
+            <div class="w-fit h-fit">
+              <a href="#" class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300">صفحه
+                اصلی</a>
+            </div>
+            <span class="w-[1px] h-[30px] bg-[#afb2b466]"></span>
+            <div class="w-fit h-fit relative group">
+              <a href="#" class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300">شرکت
+                گلستان</a>
+              <div
+                class="subfield w-[193.73px] h-fit bg-[#393939]  py-[4px] hidden absolute right-0 translate-x-[18px] group-hover:flex flex-col">
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">معرفی
+                    شرکت</a>
+                </div>
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">تاریخچه
+                    گلستان</a>
+                </div>
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">اخبار
+                    و اطلاعیه ها</a>
+                </div>
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">مسئولیت
+                    های اجتماعی</a>
+                </div>
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">سازمان
+                    فروش</a>
+                </div>
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">سازمان
+                    توضیع</a>
+                </div>
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">برند
+                    ها</a>
+                </div>
+              </div>
+            </div>
+            <span class="w-[1px] h-[30px] bg-[#afb2b466]"></span>
+            <div class="w-fit h-fit relative group">
+              <a href="#" class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300">محصولات</a>
+              <div
+                class="subfield w-[182px] h-fit bg-[#393939]  py-[4px] hidden absolute right-0 group-hover:flex translate-x-[18px] flex-col">
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a
+                    class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">چای</a>
+                </div>
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a
+                    class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">ناتس</a>
+                </div>
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">ادویه
+                    و چاشنی</a>
+                </div>
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a
+                    class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">برنج</a>
+                </div>
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">
+                    زعفران و زرشک</a>
+                </div>
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a
+                    class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">دمنوش</a>
+                </div>
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">حبوبات
+                    و غلات</a>
+                </div>
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">عصاره
+                    های گیاهی</a>
+                </div>
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">قند
+                    و شکر</a>
+                </div>
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">
+                    هاتی نودل
+                  </a>
+                </div>
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">سایر
+                    محصولات</a>
+                </div>
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">گل
+                    کیس</a>
+                </div>
+              </div>
+            </div>
+            <span class="w-[1px] h-[30px] bg-[#afb2b466]"></span>
+            <div class="w-fit h-fit relative group">
+              <a href="#" class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300">وبلاگ</a>
+              <div
+                class="subfield w-[182px] h-fit bg-[#393939] py-[4px] hidden absolute right-0 group-hover:flex translate-x-[20px] flex-col">
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">مجله
+                    گلستان</a>
+                </div>
+              </div>
+            </div>
+            <span class="w-[1px] h-[30px] bg-[#afb2b466]"></span>
+            <div class="w-fit h-fit">
+              <a href="#" class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300">قرعه
+                کشی</a>
+            </div>
+            <span class="w-[1px] h-[30px] bg-[#afb2b466]"></span>
+            <div class="w-fit h-fit">
+              <a href="#" class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300">استخدام</a>
+            </div>
+            <span class="w-[1px] h-[30px] bg-[#afb2b466]"></span>
+            <div class="w-fit h-fit relative group">
+              <a href="#" class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300">تماس با
+                ما</a>
+              <div
+                class="subfield w-[182px] h-fit bg-[#393939] py-[4px] hidden absolute right-0 group-hover:flex translate-x-[20px] flex-col">
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">دفتر
+                    مرکزی</a>
+                </div>
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">صدای
+                    مصرف کنندگان</a>
+                </div>
+                <div class="field w-full h-[46px] flex items-center px-[20px]">
+                  <a class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300 cursor-pointer">ارتباط
+                    با مشترکین</a>
+                </div>
+              </div>
+            </div>
+            <span class="w-[1px] h-[30px] bg-[#afb2b466]"></span>
+            <div class="w-fit h-fit">
+              <button href="#"
+                class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300">DarkMode</button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- website header end -->
+  </div>
+
+
+  <main id="main">
+    <div class="app-bg max-w-[1600px] mx-auto bg-fixed">
+
+      <div class="banner_container w-full mobile:h-fit desktop:h-[457px] flex mobile:flex-col desktop:flex-row">
+        <div
+          class="banner desktop:max-w-[1600px] desktop:h-[457px] mobile:w-full bg-gradient-to-t from-[#dadada] to-white mx-auto flex mobile:flex-col desktop:flex-row justify-center relative">
+          <div
+            class="items__container mobile:w-full desktop:w-[1000px] desktop:h-full flex mobile:flex-col desktop:flex-row relative desktop:pr-[10px]">
+
+            <div
+              class="items mobile:w-full desktop:w-[480px] desktop:h-[326px] mobile:p-[40px] desktop:pr-0 desktop:mt-[60px]">
+              <div class="redTitle mobile:h-[60px] desktop:mt-0 flex mobile:justify-items-center">
+                <h1 class="font-iransans mobile:text-[30px] desktop:text-[30px] mobile:mt-[8px] text-[#ff0000]">قرعه‌کشی
+                  مصرف‌کنندگان
+                  گلستان</h1>
+              </div>
+              <div class="title mobile:w-full mobile:h-[48px] mobile:my-4 ">
+                <p class="font-iransans text-[20px] text-[#58595b] ">قرعه‌کشی دوره‌ای مصرف‌کنندگان چای گلستان</p>
+              </div>
+              <div class="mobile:w-full mobile:h-fit desktop:w-[435px] desktop:h-[132px] desktop:mt-[15px]">
+                <p class="font-iransans text-[16px] text-[#898989] leading-[31px]">
+                  هر یک از مصرف‌کنندگان محصولات چای گلستان می‌توانند با ارسال کد قرعه کشی روی بسته به شماره 30007405 در
+                  قرعه
+                  کشی‌های دوره‌ای سال 1403شرکت کنند. نگهداری از بسته‌بندی محصول برای اهدای جایزه الزامی است.
+                </p>
+              </div>
+              <div class="button-more w-full h-[80px] relative flex items-center">
+                <button
+                  class="w-[134px] h-[42px] bg-[#FEFEFE] hover:bg-[#ff0000] hover:text-[#FFFFFF]  text-[#7C7D7E] font-iransans border border-[#C8C8C8] rounded-lg transition-all duration-300 ease-in-out">
+                  اطلاعات بیشتر
+                </button>
+              </div>
+            </div>
+            <div
+              class="picContainer mobile:w-full mobile:h-[400px] desktop:max-w-full justify-items-center mobile:pr-16">
+              <img src="./public/images/header/chay.png" alt="chay pic">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white py-4">
+        <div class="bg-[#BABABA] h-[0.5px]"></div>
+      </div>
+      <div class="bg-white">
+        <div class="max-w-[680px] bg-white mx-auto text-justify p-10">
+          <h2 class="font-iransans text-[20px] desktop:text-[20px] mb-[12px] font-bold text-[#ff0000]">
+            معرفی گلستان
+          </h2>
+
+          <h2 class="font-iransans text-[16px]  desktop:text-[16px] leading-[36px] font-thin text-[#7A7A7A] mb-[30px]">
+            آنچه که امروز با نام مجموعه
+            <span class="text-[#FF0000]">گلستان</span>
+            می‌شناسیم در سال 1329 بنیان نهاده شد. زمانی که شرکت گلستان فعالیت خود را با
+            بسته‌بندی و توزیع چای پاکتی آغاز کرد. با گذر زمان و رشد اقتصاد کشور، نهال «گلستان» به تدریج تقویت شد و شاخ و
+            برگ
+            گرفت. فعالیت‌های «گلستان» با تهیه، تولید و بسته‌بندی بهترین محصولات غذایی گسترش پیدا کرد.
+            <span class="text-[#FF0000]">گلستان</span> پس از سال‌ها تلاش همچنان می‌کوشد تا به کمک تجربه‌های اندوخته شده
+            در این
+            سال‌ها کالاهایی قابل اعتماد و با کیفیت تولید نماید.
+          </h2>
+
+          <h2 class="font-iransans text-[16px] desktop:text-[16px] leading-[36px] font-thin text-[#7A7A7A]">
+            هدفمندی و برنامه‌ریزی موثر، ایمان و عزم راسخ برای دستیابی به اهداف تعیین شده، به کار گیری همکاران مجرب و
+            دلسوز،
+            استفاده از روش های نوین بازاریابی و مشتری محوری از جمله عوامل مهم در استراتژی
+            <span class="text-[#FF0000]">شرکت گلستان</span>
+            است.
+          </h2>
+
+          <h2 class="font-iransans text-[20px] desktop:text-[20px] mb-[12px] font-bold text-[#ff0000] mt-[19px]">
+            محصولات گلستان
+          </h2>
+
+          <h2 class="font-iransans text-[16px] desktop:text-[16px] leading-[36px] font-thin text-[#7A7A7A] mb-[50px]">
+            <span class="text-[#FF0000]">نام تجاری گلستان</span>
+            قدمتی به اندازه عمر شرکت گلستان دارد. گلستان ممتازترین محصولات خود را با این نام تجاری عرضه
+            می‌کند. مصرف‌کنندگان محصولات گلستان همواره از این نام تجاری خاطره محصولاتی ممتاز و منحصر بفرد دارند و با
+            اطمینان از نهایت کیفیت این نام تجاری حمایت می‌کنند.
+          </h2>
+        </div>
+      </div>
+      <div
+        class="relative bg-white desktop:max-w-[1600px] desktop:h-[457px] mobile:w-full mobile:h-[716px] mx-auto flex justify-center items-center">
+        <div class="relative w-full flex flex-wrap justify-center items-center gap-x-2.5">
+          <div class="inline-block w-[205px] h-[269px] flex flex-col justify-center items-center text-center">
+            <img src="./public/images/banner/4.png" alt="banner" class="object-cover">
+            <p class="text-[#7A7A7A] font-iransans text-base font-thin leading-5 mt-5">
+              سرمایه انسانی
+            </p>
+            <div class="relative mx-auto desktop:h-[32px] desktop:flex mobile:hidden justify-center items-center">
+              <span class="absolute bg-[#DBDBDB] h-[1px] w-[185px] block"></span>
+            </div>
+          </div>
+          <div class="inline-block w-[205px] h-[269px] flex flex-col justify-center items-center text-center">
+            <img src="./public/images/banner/3.png" alt="banner" class="object-cover">
+            <p class="text-[#7A7A7A] font-iransans text-base font-thin leading-5 mt-5">
+              مراكز فروش
+            </p>
+            <div class="relative mx-auto desktop:h-[32px] desktop:flex mobile:hidden justify-center items-center">
+              <span class="absolute bg-[#DBDBDB] h-[1px] w-[185px] block"></span>
+            </div>
+          </div>
+          <div class="inline-block w-[205px] h-[269px] flex flex-col justify-center items-center text-center">
+            <img src="./public/images/banner/2.png" alt="banner" class="object-cover">
+            <p class="text-[#7A7A7A] font-iransans text-base font-thin leading-5 mt-5">
+              محصولات گلستان
+            </p>
+            <div class="relative mx-auto desktop:h-[32px] desktop:flex mobile:hidden justify-center items-center">
+              <span class="absolute bg-[#DBDBDB] h-[1px] w-[185px] block"></span>
+            </div>
+          </div>
+          <div class="inline-block w-[205px] h-[269px] flex flex-col justify-center items-center text-center">
+            <img src="./public/images/banner/1.png" alt="banner" class="object-cover">
+            <p class="text-[#7A7A7A] font-iransans text-base font-thin leading-5 mt-5">
+              مشتریان گلستان
+            </p>
+            <div class="relative mx-auto desktop:h-[32px] desktop:flex mobile:hidden justify-center items-center">
+              <span class="absolute bg-[#DBDBDB] h-[1px] w-[185px] block"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#BABABA] h-[0.5px] my-6"></div>
+      <div class="desktop:max-w-[1600px] mobile:w-full mx-auto justify-center relative content-center">
+        <img src="./public/images/big-banner/1.jpg" alt="big-banner" class="w-full aspect-video object-cover">
+      </div>
+
+      <div
+        class="desktop:max-w-[1600px] desktop:h-[20px] mobile:w-full mobile:h-[20px] bg-[#E9D69F] mx-auto justify-center relative">
+      </div>
+      <div class="relative desktop:max-w-[289px] desktop:h-[96px] w-full h-[96px] bg-[#ED1C24] mx-auto
+         top-[-96px] left-[208px]">
+      </div>
+      <div
+        class="relative desktop:max-w-[158px] desktop:h-[48px] w-full h-[48px] mx-auto top-[-183px] left-[260px] pt-[5px] pr-[20px] font-iransans text-[29px] text-nowrap text-white">
+        برنج گلستان
+      </div>
+
+      <div
+        class="relative desktop:max-w-[158px] desktop:h-[43px] w-full h-[43px] mx-auto top-[-183px] left-[260px] pt-[5px] pr-[20px] font-iransans text-[16px] text-nowrap text-white">
+        معرفی محصول
+      </div>
+      <div class="bg-[#BABABA] h-[0.5px] my-6 mt-[-9.5rem] mb-[1.5rem]"></div>
+      <div class="relative desktop:max-w-[1599px] mobile:w-full mx-auto justify-center content-center bg-white">
+        <div class="max-w-[680px] mx-auto text-justify p-10 bg-white">
+
+          <h2 class="font-iransans text-[20px] desktop:text-[20px] mb-[12px] font-bold text-[#ff0000]">
+            رکن اول غذای ایرانی
+          </h2>
+          <h2 class="font-iransans text-[16px] leading-[36px] font-thin text-[#7A7A7A] mb-[50px]">
+            مرغوب‌ترین برنج دنیا، برنج ایران است و بهترین نوع برنج ایرانی،‌ طارم و هاشمی. این برنج‌ها از بهترین
+            شالیزارهای
+            مازندران برداشت شده، پس از كنترل كیفیت در آزمایشگاه‌های تخصصی گلستان وارد چرخه بسته‌بندی و در وزن‌های مختلف
+            به
+            بازار عرضه می‌شوند. عطر و طعم بی‌نظیر برنج گلستان با هیچ برنج دیگری قابل مقایسه نیست. با گلستان،‌ كیفیت
+            زندگی
+            بالاتر از همیشه است چرا كه مشتریان گلستان؛‌ لایق بهترین‌ها هستند.
+          </h2>
+        </div>
+
+        <div class="button-more w-full relative flex items-center justify-center mr-[-171px] gap-[4px]">
+          <button
+            class="w-[134px] h-[42px] bg-[#FEFEFE] text-[#7C7D7E] font-iransans border border-[#C8C8C8] rounded-lg transition-all duration-300 ease-in-out relative top-[-60px]">
+            محصولات برنج
+          </button>
+          <button
+            class="w-[134px] h-[42px] bg-[#FEFEFE] text-[#7C7D7E] font-iransans border border-[#C8C8C8] rounded-lg transition-all duration-300 ease-in-out relative top-[-60px]">
+            آشپزخانه گلستان
+          </button>
+        </div>
+        <div class="desktop:max-w-[1600px] mobile:w-full mx-auto justify-center relative content-center">
+          <img src="./public/images/big-banner/2.jpg" alt="big-banner" class="w-full aspect-video object-cover">
+        </div>
+        <div
+          class="desktop:max-w-[1600px] desktop:h-[20px] mobile:w-full mobile:h-[20px] bg-[#E9D69F] mx-auto justify-center relative">
+        </div>
+        <div class="relative desktop:max-w-[289px] desktop:h-[96px] w-full h-[96px] bg-[#ED1C24] mx-auto
+           top-[-96px] left-[208px]">
+        </div>
+        <div
+          class="relative desktop:max-w-[158px] desktop:h-[48px] w-full h-[48px] mx-auto top-[-183px] left-[260px] pt-[5px] pr-[20px] font-iransans text-[29px] text-nowrap text-white">
+          چای گلستان
+        </div>
+        <div
+          class="relative desktop:max-w-[158px] desktop:h-[43px] w-full h-[43px] mx-auto top-[-183px] left-[260px] pt-[5px] pr-[20px] font-iransans text-[16px] text-nowrap text-white">
+          معرفی محصول
+        </div>
+        <div class="bg-[#BABABA] h-[0.5px] my-6 mt-[-9.5rem] mb-[1.5rem]"></div>
+        <div class="max-w-[680px] mx-auto text-justify p-10">
+          <h2 class="font-iransans text-[20px] desktop:text-[20px] mb-[12px] font-bold text-[#ff0000] mt-[19px]">
+            سابقه‌ای به قدمت یک عمر
+          </h2>
+          <h2 class="font-iransans text-[16px]  leading-[36px] font-thin text-[#7A7A7A] mb-[50px]">
+            چای تنها یك نوشیدنی گرم نیست.‌ یک گفتمان است؛‌ گرمابخش وجود و بهانه‌ای برای آغاز یك معاشرت دل‌چسب. بی‌دلیل
+            نیست
+            كه نام «محبوب‌ترین نوشیدنی دنیا» را با خود یدک می‌كشد. نوشیدنش خستگی‌ها را فراری داده،‌ حس خوب آرامش را به
+            همراه
+            دارد.
+          </h2>
+          <h2 class="font-iransans text-[16px] leading-[36px] font-thin text-[#7A7A7A] mb-[30px]">
+            برای مردمان ایران زمین نام <span class="text-[#FF0000]"> گلستان</span> با چای پیوند خورده است؛‌ قدیمی‌ترین
+            محصول
+            مجموعه گلستان،‌ با مدرن‌ترین و بهداشتی‌ترین دستگاه‌های روز دنیا تهیه و بسته‌بندی می‌شود. چیزی كه باعث شده
+            مشتریانش
+            یك عمر به نام گلستان اعتماد كنند، كیفیت، ‌عطر و طعم به یادماندنی آن است.
+          </h2>
+        </div>
+        <div class="button-more w-full relative flex items-center justify-center mr-[-171px] gap-[4px]">
+          <button
+            class="w-[134px] h-[42px] bg-[#FEFEFE] text-[#7C7D7E] font-iransans border border-[#C8C8C8] rounded-lg transition-all duration-300 ease-in-out relative top-[-60px] right-[-68px]">
+            محصولات چای
+          </button>
+        </div>
+        <div class="desktop:max-w-[1600px] mobile:w-full mx-auto justify-center relative content-center">
+          <img src="./public/images/big-banner/3.jpg" alt="big-banner" class="w-full aspect-video object-cover">
+        </div>
+        <div
+          class="desktop:max-w-[1600px] desktop:h-[20px] mobile:w-full mobile:h-[20px] bg-[#E9D69F] mx-auto justify-center relative">
+        </div>
+        <div class="relative desktop:max-w-[289px] desktop:h-[96px] w-full h-[96px] bg-[#ED1C24] mx-auto
+           top-[-96px] left-[208px]">
+        </div>
+        <div
+          class="relative desktop:max-w-[158px] desktop:h-[48px] w-full h-[48px] mx-auto top-[-183px] left-[260px] pt-[5px] pr-[20px] font-iransans text-[29px] text-nowrap text-white">
+          پسته گلستان
+        </div>
+        <div
+          class="relative desktop:max-w-[158px] desktop:h-[43px] w-full h-[43px] mx-auto top-[-183px] left-[260px] pt-[5px] pr-[20px] font-iransans text-[16px] text-nowrap text-white">
+          معرفی محصول
+        </div>
+        <div class="bg-[#BABABA] h-[0.5px] my-6 mt-[-9.5rem] mb-[1.5rem]"></div>
+        <div class="relative desktop:max-w-[1599px] mobile:w-full mx-auto justify-center content-center">
+
+          <div class="max-w-[680px] mx-auto text-justify p-10">
+            <h2 class="font-iransans text-[20px] desktop:text-[20px] mb-[12px] font-bold text-[#ff0000]">
+              آجيل‌های خوش خنده
+            </h2>
+            <h2 class="font-iransans text-[16px] leading-[36px] font-thin text-[#7A7A7A] mb-[50px]">
+              خواص فوق‌العاده پسته بر كسی پوشیده نیست. پسته را منبع ویتامین و مواد معدنی می‌نامند، یك پمپ خون‌ساز قوی و
+              تسكین دهنده قلب و اعصاب.
+            </h2>
+            <h2 class="font-iransans text-[16px] leading-[36px] font-thin text-[#7A7A7A] mb-[50px]">
+              <span class="text-[#FF0000]"> پسته گلستان</span> اما حسابش از دیگر پسته‌های بازار جداست. مرغوب‌ترین پسته
+              خام
+              از بهترین باغ‌های پسته ایران دستچین
+              می‌شود.‌ پس از كنترل كیفیت در آزمایشگاه و اطمینان از سلامت محصول،‌ با زعفران درجه یک و نمک، بوداده و برشته
+              شده
+              و‌ پسته گلستان را با طعم و رنگ و عطری بی‌نظیر به ارمغان می‌آورد.
+            </h2>
+          </div>
+          <div class="button-more w-full relative flex items-center justify-center mr-[-171px] gap-[4px]">
+            <button
+              class="w-[134px] h-[42px] bg-[#FEFEFE] text-[#7C7D7E] font-iransans border border-[#C8C8C8] rounded-lg transition-all duration-300 ease-in-out relative top-[-60px] right-[-68px]">
+              ناتس گلستان
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" w-full h-96 mx-auto"></div>
+
+      <div class="bg-white">
+        <div class="max-w-[1280px] mx-auto text-justify p-10">
+          <h2 class="font-iransans text-[20px] desktop:text-[20px] mb-[12px] font-bold text-[#ff0000]">
+            مجله گلستان
+          </h2>
+        </div>
+      </div>
+      <div class="w-full flex justify-center">
+        <div class="w-[1599px] h-[772px] bg-[#CDE4B0] flex justify-center items-center relative">
+          <div class="w-[999px] h-[772px] flex justify-center items-center">
+            <div class="relative w-full flex flex-row justify-center items-center gap-x-2.5">
+              <div class="w-[318px] h-[603px] flex flex-col justify-center items-center text-center bg-white">
+                <img src="./public/images/small-banner/sb3.jpg" alt="small-banner"
+                  class="object-cover w-[344px] h-[312px] mt-[-251px]">
+                <p class="text-[#ff0000] font-iransans text-[20px] font-bold leading-5 mt-5"> ماکارونی با سبزیجات</p>
+              </div>
+              <div class="w-[318px] h-[603px] flex flex-col justify-center items-center text-center bg-white">
+                <img src="./public/images/small-banner/sb2.jpg" alt="small-banner"
+                  class="object-cover w-[344px] h-[312px] mt-[-251px]">
+                <p class="text-[#ff0000] font-iransans  text-[20px] font-bold leading-5 mt-5">سوپ مکزیکی</p>
+              </div>
+              <div class="w-[318px] h-[603px] flex flex-col justify-center items-center text-center bg-white">
+                <img src="./public/images/small-banner/sb1.jpg" alt="small-banner"
+                  class="object-cover w-[344px] h-[312px] mt-[-251px]">
+                <p class="text-[#ff0000] font-iransans  text-[20px] font-bold leading-5 mt-5"> چیلاکیله</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>
