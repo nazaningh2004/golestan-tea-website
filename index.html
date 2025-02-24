@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en" dir="rtl" class="light" class="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -16,11 +16,12 @@
 </head>
 
 <body>
-  <div
-    class="desktop:max-w-[1600px] desktop:mx-auto desktop:h-[100.5px] mobile:h-[181.5px] bg-[#2b2b2b] sticky z-[999999999] top-0">
+  <div class="bg-white dark:bg-[#1d3158] "></div>
+  <div class="desktop:max-w-[1600px] desktop:mx-auto desktop:h-[100.5px] mobile:h-[181.5px]  bg-[#2b2b2b]
+    dark:bg-[#101828]  sticky z-[999999999] top-0">
     <!-- website header -->
     <header
-      class="max-w-[1070px] desktop:h-[100.5px] mobile:h-[181.5px] bg-[#2b2b2b] mx-auto desktop:flex justify-center">
+      class="max-w-[1070px] desktop:h-[100.5px] mobile:h-[181.5px] bg-[#2b2b2b] dark:bg-[#101828] mx-auto desktop:flex justify-center">
       <div
         class="headerItems desktop:w-[1400px] h-full flex mobile:flex-col desktop:flex-row mx-auto mobile:items-center desktop:items-start relative">
         <div class="logoContainer w-[170px] h-[105px] desktop:translate-x-[-37px] mobile:mt-2 desktop:mt-0">
@@ -73,7 +74,7 @@
             </div>
             <div class="drawerItems w-full h-[44px] py-[12px] mr-4 text-[14px] px-[15px] cursor-pointer">
               <p class="font-iransans font-[14px] text-[#AFB2B4] hover:text-white duration-200">
-                DarkMode
+                Dark Mode
               </p>
             </div>
           </div>
@@ -219,8 +220,8 @@
             </div>
             <span class="w-[1px] h-[30px] bg-[#afb2b466]"></span>
             <div class="w-fit h-fit">
-              <button href="#"
-                class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300">DarkMode</button>
+              <button href="#" id="darkbtn"
+                class="text-[#afb2b4] text-[16px] font-iransans hover:text-white duration-300">Dark Mode</button>
             </div>
           </nav>
         </div>
@@ -233,7 +234,8 @@
   <main id="main">
     <div class="app-bg max-w-[1600px] mx-auto bg-fixed">
 
-      <div class="banner_container w-full mobile:h-fit desktop:h-[457px] flex mobile:flex-col desktop:flex-row">
+
+      <div class="banner_container w-full mobile:h-fit desktop:h-[457px] flex mobile:flex-col desktop:flex-row ">
         <div
           class="banner desktop:max-w-[1600px] desktop:h-[457px] mobile:w-full bg-gradient-to-t from-[#dadada] to-white mx-auto flex mobile:flex-col desktop:flex-row justify-center relative">
           <div
@@ -242,7 +244,9 @@
             <div
               class="items mobile:w-full desktop:w-[480px] desktop:h-[326px] mobile:p-[40px] desktop:pr-0 desktop:mt-[60px]">
               <div class="redTitle mobile:h-[60px] desktop:mt-0 flex mobile:justify-items-center">
-                <h1 class="font-iransans mobile:text-[30px] desktop:text-[30px] mobile:mt-[8px] text-[#ff0000]">قرعه‌کشی
+                <h1
+                  class="font-iransans mobile:text-[30px] desktop:text-[30px] mobile:mt-[8px] text-[#ff0000] dark:text-[#101828] ">
+                  قرعه‌کشی
                   مصرف‌کنندگان
                   گلستان</h1>
               </div>
@@ -275,7 +279,8 @@
       </div>
       <div class="bg-white">
         <div class="max-w-[680px] bg-white mx-auto text-justify p-10">
-          <h2 class="font-iransans text-[20px] desktop:text-[20px] mb-[12px] font-bold text-[#ff0000]">
+          <h2 class="font-iransans text-[20px] desktop:text-[20px] mb-[12px] font-bold text-[#ff0000]
+          dark:text-[#101828]">
             معرفی گلستان
           </h2>
 
@@ -299,7 +304,8 @@
             است.
           </h2>
 
-          <h2 class="font-iransans text-[20px] desktop:text-[20px] mb-[12px] font-bold text-[#ff0000] mt-[19px]">
+          <h2 class="font-iransans text-[20px] desktop:text-[20px] mb-[12px] font-bold text-[#ff0000] 
+          dark:text-[#101828] mt-[19px]">
             محصولات گلستان
           </h2>
 
@@ -312,9 +318,9 @@
         </div>
       </div>
       <div
-        class="relative bg-white desktop:max-w-[1600px] desktop:h-[457px] mobile:w-full mobile:h-[716px] mx-auto flex justify-center items-center">
+        class="relative bg-white dark:bg-slate-600 desktop:max-w-[1600px] desktop:h-[457px] mobile:w-full mobile:h-[716px] mx-auto flex justify-center items-center">
         <div class="relative w-full flex flex-wrap justify-center items-center gap-x-2.5">
-          <div class="inline-block w-[205px] h-[269px] flex flex-col justify-center items-center text-center">
+          <div class="block w-[205px] h-[269px] flex flex-col justify-center items-center text-center">
             <img src="./public/images/banner/4.png" alt="banner" class="object-cover">
             <p class="text-[#7A7A7A] font-iransans text-base font-thin leading-5 mt-5">
               سرمایه انسانی
@@ -323,7 +329,7 @@
               <span class="absolute bg-[#DBDBDB] h-[1px] w-[185px] block"></span>
             </div>
           </div>
-          <div class="inline-block w-[205px] h-[269px] flex flex-col justify-center items-center text-center">
+          <div class="block w-[205px] h-[269px] flex flex-col justify-center items-center text-center">
             <img src="./public/images/banner/3.png" alt="banner" class="object-cover">
             <p class="text-[#7A7A7A] font-iransans text-base font-thin leading-5 mt-5">
               مراكز فروش
@@ -332,7 +338,7 @@
               <span class="absolute bg-[#DBDBDB] h-[1px] w-[185px] block"></span>
             </div>
           </div>
-          <div class="inline-block w-[205px] h-[269px] flex flex-col justify-center items-center text-center">
+          <div class="block w-[205px] h-[269px] flex flex-col justify-center items-center text-center">
             <img src="./public/images/banner/2.png" alt="banner" class="object-cover">
             <p class="text-[#7A7A7A] font-iransans text-base font-thin leading-5 mt-5">
               محصولات گلستان
@@ -341,7 +347,7 @@
               <span class="absolute bg-[#DBDBDB] h-[1px] w-[185px] block"></span>
             </div>
           </div>
-          <div class="inline-block w-[205px] h-[269px] flex flex-col justify-center items-center text-center">
+          <div class="block w-[205px] h-[269px] flex flex-col justify-center items-center text-center">
             <img src="./public/images/banner/1.png" alt="banner" class="object-cover">
             <p class="text-[#7A7A7A] font-iransans text-base font-thin leading-5 mt-5">
               مشتریان گلستان
@@ -360,8 +366,8 @@
       <div
         class="desktop:max-w-[1600px] desktop:h-[20px] mobile:w-full mobile:h-[20px] bg-[#E9D69F] mx-auto justify-center relative">
       </div>
-      <div class="relative desktop:max-w-[289px] desktop:h-[96px] w-full h-[96px] bg-[#ED1C24] mx-auto
-         top-[-96px] left-[208px]">
+      <div class="relative desktop:max-w-[289px] desktop:h-[96px] mobile:w-full mobile:left-[0] h-[96px] bg-[#ED1C24] dark:bg-[#1d3158] mx-auto
+         top-[-96px] desktop:left-[208px]">
       </div>
       <div
         class="relative desktop:max-w-[158px] desktop:h-[48px] w-full h-[48px] mx-auto top-[-183px] left-[260px] pt-[5px] pr-[20px] font-iransans text-[29px] text-nowrap text-white">
@@ -376,7 +382,8 @@
       <div class="relative desktop:max-w-[1599px] mobile:w-full mx-auto justify-center content-center bg-white">
         <div class="max-w-[680px] mx-auto text-justify p-10 bg-white">
 
-          <h2 class="font-iransans text-[20px] desktop:text-[20px] mb-[12px] font-bold text-[#ff0000]">
+          <h2
+            class="font-iransans text-[20px] desktop:text-[20px] mb-[12px] font-bold text-[#ff0000] dark:text-[#101828]">
             رکن اول غذای ایرانی
           </h2>
           <h2 class="font-iransans text-[16px] leading-[36px] font-thin text-[#7A7A7A] mb-[50px]">
@@ -392,11 +399,11 @@
 
         <div class="button-more w-full relative flex items-center justify-center mr-[-171px] gap-[4px]">
           <button
-            class="w-[134px] h-[42px] bg-[#FEFEFE] text-[#7C7D7E] font-iransans border border-[#C8C8C8] rounded-lg transition-all duration-300 ease-in-out relative top-[-60px]">
+            class="w-[134px] h-[42px]w-[134px] h-[42px] bg-[#FEFEFE] hover:bg-[#ff0000] hover:text-[#FFFFFF]  text-[#7C7D7E] font-iransans border border-[#C8C8C8] rounded-lg transition-all duration-300 ease-in-out relative top-[-60px]">
             محصولات برنج
           </button>
           <button
-            class="w-[134px] h-[42px] bg-[#FEFEFE] text-[#7C7D7E] font-iransans border border-[#C8C8C8] rounded-lg transition-all duration-300 ease-in-out relative top-[-60px]">
+            class="w-[134px] h-[42px] w-[134px] h-[42px] bg-[#FEFEFE] hover:bg-[#ff0000] hover:text-[#FFFFFF]  text-[#7C7D7E] font-iransans border border-[#C8C8C8] rounded-lg transition-all duration-300 ease-in-out relative top-[-60px]">
             آشپزخانه گلستان
           </button>
         </div>
@@ -406,8 +413,8 @@
         <div
           class="desktop:max-w-[1600px] desktop:h-[20px] mobile:w-full mobile:h-[20px] bg-[#E9D69F] mx-auto justify-center relative">
         </div>
-        <div class="relative desktop:max-w-[289px] desktop:h-[96px] w-full h-[96px] bg-[#ED1C24] mx-auto
-           top-[-96px] left-[208px]">
+        <div class="relative desktop:max-w-[289px] desktop:h-[96px] mobile:w-full mobile:left-[0] h-[96px] bg-[#ED1C24] dark:bg-[#1d3158] mx-auto
+        top-[-96px] desktop:left-[208px]">
         </div>
         <div
           class="relative desktop:max-w-[158px] desktop:h-[48px] w-full h-[48px] mx-auto top-[-183px] left-[260px] pt-[5px] pr-[20px] font-iransans text-[29px] text-nowrap text-white">
@@ -419,7 +426,8 @@
         </div>
         <div class="bg-[#BABABA] h-[0.5px] my-6 mt-[-9.5rem] mb-[1.5rem]"></div>
         <div class="max-w-[680px] mx-auto text-justify p-10">
-          <h2 class="font-iransans text-[20px] desktop:text-[20px] mb-[12px] font-bold text-[#ff0000] mt-[19px]">
+          <h2 class="font-iransans text-[20px] desktop:text-[20px] mb-[12px] font-bold text-[#ff0000] dark:text-[#101828]
+           mt-[19px]">
             سابقه‌ای به قدمت یک عمر
           </h2>
           <h2 class="font-iransans text-[16px]  leading-[36px] font-thin text-[#7A7A7A] mb-[50px]">
@@ -439,7 +447,7 @@
         </div>
         <div class="button-more w-full relative flex items-center justify-center mr-[-171px] gap-[4px]">
           <button
-            class="w-[134px] h-[42px] bg-[#FEFEFE] text-[#7C7D7E] font-iransans border border-[#C8C8C8] rounded-lg transition-all duration-300 ease-in-out relative top-[-60px] right-[-68px]">
+            class="w-[134px] h-[42px]w-[134px] h-[42px] bg-[#FEFEFE] hover:bg-[#ff0000] hover:text-[#FFFFFF]  text-[#7C7D7E] font-iransans border border-[#C8C8C8] rounded-lg transition-all duration-300 ease-in-out relative top-[-60px] right-[-68px]">
             محصولات چای
           </button>
         </div>
@@ -449,8 +457,8 @@
         <div
           class="desktop:max-w-[1600px] desktop:h-[20px] mobile:w-full mobile:h-[20px] bg-[#E9D69F] mx-auto justify-center relative">
         </div>
-        <div class="relative desktop:max-w-[289px] desktop:h-[96px] w-full h-[96px] bg-[#ED1C24] mx-auto
-           top-[-96px] left-[208px]">
+        <div class="relative desktop:max-w-[289px] desktop:h-[96px] mobile:w-full mobile:left-[0] h-[96px] bg-[#ED1C24] dark:bg-[#1d3158] mx-auto
+        top-[-96px] desktop:left-[208px]">
         </div>
         <div
           class="relative desktop:max-w-[158px] desktop:h-[48px] w-full h-[48px] mx-auto top-[-183px] left-[260px] pt-[5px] pr-[20px] font-iransans text-[29px] text-nowrap text-white">
@@ -464,7 +472,8 @@
         <div class="relative desktop:max-w-[1599px] mobile:w-full mx-auto justify-center content-center">
 
           <div class="max-w-[680px] mx-auto text-justify p-10">
-            <h2 class="font-iransans text-[20px] desktop:text-[20px] mb-[12px] font-bold text-[#ff0000]">
+            <h2
+              class="font-iransans text-[20px] desktop:text-[20px] mb-[12px] font-bold text-[#ff0000] dark:text-[#101828]">
               آجيل‌های خوش خنده
             </h2>
             <h2 class="font-iransans text-[16px] leading-[36px] font-thin text-[#7A7A7A] mb-[50px]">
@@ -482,7 +491,7 @@
           </div>
           <div class="button-more w-full relative flex items-center justify-center mr-[-171px] gap-[4px]">
             <button
-              class="w-[134px] h-[42px] bg-[#FEFEFE] text-[#7C7D7E] font-iransans border border-[#C8C8C8] rounded-lg transition-all duration-300 ease-in-out relative top-[-60px] right-[-68px]">
+              class="w-[134px] h-[42px] w-[134px] h-[42px] bg-[#FEFEFE] hover:bg-[#ff0000] hover:text-[#FFFFFF]  text-[#7C7D7E] font-iransans border border-[#C8C8C8] rounded-lg transition-all duration-300 ease-in-out relative top-[-60px] right-[-68px]">
               ناتس گلستان
             </button>
           </div>
@@ -493,42 +502,171 @@
 
       <div class="bg-white">
         <div class="max-w-[1280px] mx-auto text-justify p-10">
-          <h2 class="font-iransans text-[20px] desktop:text-[20px] mb-[12px] font-bold text-[#ff0000]">
+          <h2
+            class="font-iransans text-[20px] desktop:text-[20px] mb-[12px] font-bold text-[#ff0000] dark:text-[#101828]">
             مجله گلستان
           </h2>
         </div>
       </div>
-      <div class="w-full flex justify-center">
-        <div class="w-[1599px] h-[772px] bg-[#CDE4B0] flex justify-center items-center relative">
-          <div class="w-[999px] h-[772px] flex justify-center items-center">
-            <div class="relative w-full flex flex-row justify-center items-center gap-x-2.5">
-              <div class="w-[318px] h-[603px] flex flex-col justify-center items-center text-center bg-white">
-                <img src="./public/images/small-banner/sb3.jpg" alt="small-banner"
-                  class="object-cover w-[344px] h-[312px] mt-[-251px]">
-                <p class="text-[#ff0000] font-iransans text-[20px] font-bold leading-5 mt-5"> ماکارونی با سبزیجات</p>
-              </div>
-              <div class="w-[318px] h-[603px] flex flex-col justify-center items-center text-center bg-white">
-                <img src="./public/images/small-banner/sb2.jpg" alt="small-banner"
-                  class="object-cover w-[344px] h-[312px] mt-[-251px]">
-                <p class="text-[#ff0000] font-iransans  text-[20px] font-bold leading-5 mt-5">سوپ مکزیکی</p>
-              </div>
-              <div class="w-[318px] h-[603px] flex flex-col justify-center items-center text-center bg-white">
-                <img src="./public/images/small-banner/sb1.jpg" alt="small-banner"
-                  class="object-cover w-[344px] h-[312px] mt-[-251px]">
-                <p class="text-[#ff0000] font-iransans  text-[20px] font-bold leading-5 mt-5"> چیلاکیله</p>
-              </div>
+      <div class="w-full flex justify-center bg-[#CDE4B0]  dark:bg-slate-600 h-[772px]">
+        <div class="grid desktop:grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1 gap-2.5">
+          <div
+            class="w-[318px] h-[603px] flex flex-col items-center my-24 bg-white shadow-[-3px_3px_7px_0px_rgba(0,0,0,0.2)] overflow-hidden">
+            <div class="w-full">
+              <img src="./public/images/small-banner/sb3.jpg" alt="small-banner"
+                class="object-cover w-full cursor-pointer transition duration-300 hover:scale-105">
+            </div>
+            <p
+              class="text-[#ff0000] font-iransans text-[20px] font-normal leading-5 mt-5 self-start cursor-pointer transition duration-300 hover:text-red-600 p-4">
+              ماکارونی با سبزیجات
+            </p>
+            <h2 class="font-iransans text-[14px] leading-[36px] font-thin text-[#7A7A7A] mr-[10px]">
+              ابتدا ماکارانی‌ها را در ظرفی‌ به‌ همراه‌ آب‌، روغن‌ مایع‌ و نمک‌ می‌ریزیم‌ تا کمی‌ بپزد. در این‌ حین‌
+              پیازها را خرد کرده‌ و روی‌ روغن‌ تفت‌ می‌دهیم‌ تا طلایی‌ شود…
+            </h2>
+            <div class="button-more w-full relative flex items-center justify-center mr-[-171px]">
+              <button class="w-[107px] h-[42px] bg-[#FEFEFE] hover:bg-[#ff0000] hover:text-[#FFFFFF]  text-[#7C7D7E] font-iransans border border-[#C8C8C8] rounded-lg transition-all duration-300 ease-in-out relative gap-[4px] mb-[-171px]
+
+                ">
+                ادامه مطلب
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-[318px] h-[603px] my-24 flex flex-col items-center bg-white shadow-[-3px_3px_7px_0px_rgba(0,0,0,0.2)] overflow-hidden">
+            <div class="w-full">
+              <img src="./public/images/small-banner/sb2.jpg" alt="small-banner"
+                class="object-cover w-full cursor-pointer transition duration-300 hover:scale-105">
+            </div>
+            <p
+              class="text-[#ff0000] font-iransans text-[20px] font-normal leading-5 mt-5 self-start cursor-pointer transition duration-300 hover:text-red-600 p-4">
+              سوپ مکزیکی
+            </p>
+            <h2 class="font-iransans text-[14px] leading-[36px] font-thin text-[#7A7A7A] mr-[10px]">
+              گوشت بوقلمون را در یک ماهیتابه بزرگ ریخته، آب روی آن بریزید تا روی آن را بپوشاند و به مدت نیم ساعت آن را
+              بپزید. گوشت
+              را از مایع آن بیرون آورده…
+            </h2>
+            <div class="button-more w-full relative flex items-center justify-center mr-[-171px]">
+              <button class="w-[107px] h-[42px] bg-[#FEFEFE] hover:bg-[#ff0000] hover:text-[#FFFFFF]  text-[#7C7D7E] font-iransans border border-[#C8C8C8] rounded-lg transition-all duration-300 ease-in-out relative gap-[4px] mb-[-171px]
+
+                ">
+                ادامه مطلب
+              </button>
+            </div>
+          </div>
+          <div
+            class="mobile:hidden tablet:block my-24 desktop:block w-[318px] h-[603px] flex flex-col items-center bg-white shadow-[-3px_3px_7px_0px_rgba(0,0,0,0.2)] overflow-hidden">
+            <div class="w-full">
+              <img src="./public/images/small-banner/sb1.jpg" alt="small-banner"
+                class="object-cover w-full cursor-pointer transition duration-300 hover:scale-105">
+            </div>
+            <p
+              class="text-[#ff0000] font-iransans text-[20px] font-normal leading-5 mt-5 self-start cursor-pointer transition duration-300 hover:text-red-600 p-4">
+              چیلاکیله
+            </p>
+            <h2 class="font-iransans text-[14px] leading-[36px] font-thin text-[#7A7A7A] mr-[10px]">
+              احتمالا نام چیلا کیله را نشنیده باشید ولی اگر یکبار این غذای فوق‌العاده خوشمزه را تهیه کنید و نوش جان کنید
+              جزئی جدانشدنی از فهرست
+            </h2>
+            <div class="button-more w-full relative flex items-center justify-center mr-[-171px]">
+              <button class="w-[107px] h-[42px] bg-[#FEFEFE] hover:bg-[#ff0000] hover:text-[#FFFFFF]  text-[#7C7D7E] font-iransans border border-[#C8C8C8] rounded-lg transition-all duration-300 ease-in-out relative gap-[4px] mb-[-171px]
+
+                ">
+                ادامه مطلب
+              </button>
+            </div>
+          </div>
+          <div
+            class="mobile:hidden tablet:block desktop:block my-24 w-[318px] h-[603px] flex flex-col items-center bg-white shadow-[-3px_3px_7px_0px_rgba(0,0,0,0.2)] overflow-hidden">
+            <div class="w-full">
+              <img src="./public/images/small-banner/sb3.jpg" alt="small-banner"
+                class="object-cover w-full cursor-pointer transition duration-300 hover:scale-105">
+            </div>
+            <p
+              class="text-[#ff0000] font-iransans text-[20px] font-normal leading-5 mt-5 self-start cursor-pointer transition duration-300 hover:text-red-600 p-4">
+              سالاد نودل
+            </p>
+            <h2 class="font-iransans text-[14px] leading-[36px] font-thin text-[#7A7A7A] mr-[10px]">
+              ابتدا ماکارانی‌ها را در ظرفی‌ به‌ همراه‌ آب‌، روغن‌ مایع‌ و نمک‌ می‌ریزیم‌ تا کمی‌ بپزد. در این‌ حین‌
+              پیازها را خرد کرده‌ و روی‌ روغن‌ تفت‌ می‌دهیم‌ تا طلایی‌ شود…
+            </h2>
+            <div class="button-more w-full relative flex items-center justify-center mr-[-171px]">
+              <button class="w-[107px] h-[42px] bg-[#FEFEFE] hover:bg-[#ff0000] hover:text-[#FFFFFF]  text-[#7C7D7E] font-iransans border border-[#C8C8C8] rounded-lg transition-all duration-300 ease-in-out relative gap-[4px] mb-[-171px]
+
+              ">
+                ویدیوهای بیشتر
+              </button>
+            </div>
+          </div>
+          <div
+            class="mobile:hidden tablet:hidden desktop:block my-24 w-[318px] h-[603px] flex flex-col items-center bg-white shadow-[-3px_3px_7px_0px_rgba(0,0,0,0.2)] overflow-hidden">
+            <div class="w-full">
+              <img src="./public/images/small-banner/sb2.jpg" alt="small-banner"
+                class="object-cover w-full cursor-pointer transition duration-300 hover:scale-105">
+            </div>
+            <p
+              class="text-[#ff0000] font-iransans text-[20px] font-normal leading-5 mt-5 self-start cursor-pointer transition duration-300 hover:text-red-600 p-4">
+              اینستاگرام هاتی نودل
+            </p>
+            <h2 class="font-iransans text-[14px] leading-[36px] font-thin text-[#7A7A7A] mr-[10px]">
+              گوشت بوقلمون را در یک ماهیتابه بزرگ ریخته، آب روی آن بریزید تا روی آن را بپوشاند و به مدت نیم ساعت آن را
+              بپزید. گوشت
+              را از مایع آن بیرون آورده…
+            </h2>
+            <div class="button-more w-full relative flex items-center justify-center mr-[-171px]">
+              <button class="w-[107px] h-[42px] bg-[#FEFEFE] hover:bg-[#ff0000] hover:text-[#FFFFFF]  text-[#7C7D7E] font-iransans border border-[#C8C8C8] rounded-lg transition-all duration-300 ease-in-out relative gap-[4px] mb-[-171px]
+
+              ">
+                ادامه مطلب
+              </button>
+            </div>
+          </div>
+          <div
+            class="mobile:hidden tablet:hidden my-24 desktop:block w-[318px] h-[603px] flex flex-col items-center bg-white shadow-[-3px_3px_7px_0px_rgba(0,0,0,0.2)] overflow-hidden">
+            <div class="w-full">
+              <img src="./public/images/small-banner/sb1.jpg" alt="small-banner"
+                class="object-cover w-full cursor-pointer transition duration-300 hover:scale-105">
+            </div>
+            <p
+              class="text-[#ff0000] font-iransans text-[20px] font-normal leading-5 mt-5 self-start cursor-pointer transition duration-300 hover:text-red-600 p-4">
+              برنج گلستان
+            </p>
+            <h2 class="font-iransans text-[14px] leading-[36px] font-thin text-[#7A7A7A] mr-[10px]">
+              احتمالا نام چیلا کیله را نشنیده باشید ولی اگر یکبار این غذای فوق‌العاده خوشمزه را تهیه کنید و نوش جان کنید
+              جزئی جدانشدنی از فهرست
+            </h2>
+            <div class="button-more w-full relative flex items-center justify-center mr-[-171px]">
+              <button class="w-[107px] h-[42px] bg-[#FEFEFE] hover:bg-[#ff0000] hover:text-[#FFFFFF]  text-[#7C7D7E] font-iransans border border-[#C8C8C8] rounded-lg transition-all duration-300 ease-in-out relative gap-[4px] mb-[-171px]
+              ">
+                مشاهده محصولات
+              </button>
             </div>
           </div>
         </div>
       </div>
 
-
-
-
-    </div>
+      <div class="w-full flex justify-center bg-[#105153]  dark:bg-[#101828] h-[772px]">
+        <div class="bg-[#f92828] h-[0.5px] my-6 mt-[-9.5rem] mb-[1.5rem]"></div>
+      </div>
 
   </main>
 
+  <script>
+    const darkbtn = document.getElementById("darkbtn");
+    const htmlTag = document.querySelector("html");
+
+    darkbtn.addEventListener("click", () => {
+
+      if (htmlTag.classList.contains("dark")) {
+        htmlTag.classList.remove("dark");
+        darkbtn.innerHTML = "Dark Mode";
+      } else {
+        htmlTag.classList.add("dark");
+        darkbtn.innerHTML = "Light Mode";
+      }
+    });
+  </script>
 </body>
 
 </html>
